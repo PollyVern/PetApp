@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  PetApp
+
+  Created by Polina Belovodskaya on 26.01.2025.
+  
+*/
+
+"launch_view_header" = "Test Application Built With";
+"launch_view_swift_ui" = "SwiftUI";

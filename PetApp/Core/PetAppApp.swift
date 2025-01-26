@@ -25,7 +25,7 @@ struct PetAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchView()
         }
 //        .modelContainer(sharedModelContainer)
     }
