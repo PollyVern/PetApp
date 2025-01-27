@@ -1,0 +1,77 @@
+{
+  "animals": [
+    {
+      "name": "Froggy",
+      "age": 2,
+      "personality": "Calm and loves water",
+      "description": "A beautiful green frog that enjoys spending time in its terrarium. Froggy is low-maintenance and perfect for someone looking for a unique pet. It loves to sit near small pools of water and bask under a heat lamp. Froggy is friendly and easy to handle, making it an ideal companion for first-time amphibian owners. Just ensure it has a cozy environment, and it will thrive happily.",
+      "weightKg": 0.2,
+      "imageName": "frog_image",
+      "backgroundColorHex": "#8FBC8F"
+    },
+    {
+      "name": "Mousey",
+      "age": 1,
+      "personality": "Playful and curious",
+      "description": "A tiny and energetic mouse that's full of curiosity. Mousey loves to explore its surroundings and interact with toys in its cage. This little adventurer is great for anyone who enjoys small, lively pets. Mousey is easy to care for and can be a perfect first pet for kids or adults alike. With its adorable light-gray fur and playful nature, Mousey will bring a lot of joy to your home.",
+      "weightKg": 0.03,
+      "imageName": "mouse_image",
+      "backgroundColorHex": "#D3D3D3"
+    },
+    {
+      "name": "Barsik",
+      "age": 3,
+      "personality": "Gentle and calm",
+      "description": "Barsik is a soft, beige-colored cat who loves cozy corners and quiet naps. He is the definition of a calm companion, perfect for people seeking a relaxing pet. Barsik enjoys being petted and will happily curl up on your lap while you read or watch TV. Though quiet by nature, he has a curious streak and likes watching the world outside the window. Barsik is looking for a warm and loving home where he can feel secure and loved.",
+      "weightKg": 4.5,
+      "imageName": "cat_beige_image",
+      "backgroundColorHex": "#F5DEB3"
+    },
+    {
+      "name": "Murzik",
+      "age": 5,
+      "personality": "Serious and independent",
+      "description": "Murzik is a handsome cat with a light brown coat and a dignified personality. He values his independence but is also affectionate when he feels comfortable. Murzik is a great match for someone who appreciates a balanced pet—not too needy, but still loving. He enjoys lounging in sunny spots or exploring his environment. Murzik would thrive in a home with a peaceful atmosphere and a caring owner.",
+      "weightKg": 5.2,
+      "imageName": "cat_brown_image",
+      "backgroundColorHex": "#C3A26E"
+    },
+    {
+      "name": "Blackie",
+      "age": 4,
+      "personality": "Calm and elegant",
+      "description": "Blackie is a sleek, light-black cat with an air of elegance and poise. He has a quiet demeanor and enjoys a predictable routine. Blackie loves soft cushions, gentle strokes, and observing life from a comfortable perch. He’s an independent soul but will happily keep you company when you need it. Blackie is ideal for someone looking for a loyal, low-maintenance companion.",
+      "weightKg": 4.8,
+      "imageName": "cat_black_image",
+      "backgroundColorHex": "#A9A9A9"
+    },
+    {
+      "name": "Snowy",
+      "age": 2,
+      "personality": "Playful and affectionate",
+      "description": "Snowy is a sweet, light-gray cat with a lively and affectionate nature. He loves to play with toys and enjoys chasing balls or strings around the house. Snowy is also very gentle and gets along wonderfully with children. He is the perfect combination of playful energy and cuddly charm. Snowy is searching for a loving family to share his joy and warmth.",
+      "weightKg": 4.2,
+      "imageName": "cat_gray_image",
+      "backgroundColorHex": "#DCDCDC"
+    },
+    {
+      "name": "Rex",
+      "age": 6,
+      "personality": "Friendly and loyal",
+      "description": "Rex is a light-brown dog with a warm and friendly nature. He’s incredibly loyal and makes a fantastic companion for both families and individuals. Rex enjoys outdoor activities like walks and playing fetch. Despite his energetic side, he also knows how to relax and appreciates quiet moments with his owner. Rex would be a great addition to any home looking for a protective yet loving dog.",
+      "weightKg": 25.0,
+      "imageName": "dog_brown_image",
+      "backgroundColorHex": "#D2B48C"
+    },
+    {
+      "name": "Beam",
+      "age": 3,
+      "personality": "Energetic and playful",
+      "description": "Beam is a light-gray dog who is always ready for action. He loves running, jumping, and playing with other dogs or his favorite toys. Beam has a big heart and a playful spirit, making him a joy to be around. He’s great with kids and thrives in an active household. If you’re looking for a dog to match your energy and bring endless happiness, Beam is the perfect choice.",
+      "weightKg": 18.0,
+      "imageName": "dog_gray_image",
+      "backgroundColorHex": "#B0C4DE"
+    }
+  ]
+}
+

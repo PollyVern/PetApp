@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  OnboardingView.swift
 //  PetApp
 //
 //  Created by Polina Belovodskaya on 23.01.2025.
@@ -7,25 +7,27 @@
 
 import SwiftUI
 
-struct LaunchView: View {
-
-    @StateObject var navigationManager = NavigationManager()
+struct OnboardingView: View {
 
     // ViewModel
-    @StateObject private var viewModel: ContentViewModel = ContentViewModel()
+    @StateObject private var viewModel: OnboardingViewModel = OnboardingViewModel()
+
+    // Navigation
+    @EnvironmentObject var coordinator: NavigationCoordinator
 
     var body: some View {
         ZStack {
             backgroundColor()
             titleText()
             catImage()
+            accentButton()
         }
         .ignoresSafeArea()
     }
 }
 
 // MARK: - Private extension: VIEW
-private extension LaunchView {
+private extension OnboardingView {
     func backgroundColor() -> some View {
         Color.blue_lightColor
             .edgesIgnoringSafeArea(.all)
@@ -50,10 +52,21 @@ private extension LaunchView {
                 .frame(height: ConstantsUI.screenHeight * 0.8)
         }
     }
+
+    func accentButton() -> some View {
+        VStack {
+            Spacer()
+            AccentButtonView(model: AccentButtonModel(mainText: "launch_view_accent_button",
+                                                      systemImageText: "pawprint.fill")) {
+                
+                coordinator.navigateTo(.home)
+            }
+        }
+    }
 }
 
 // MARK: - Private extension
-private extension LaunchView {
+private extension OnboardingView {
     func createMainPartTitle() -> String {
         let textBuilder: TextBuilderProtocol = TextBuilder(key: "launch_view_header")
         let text = textBuilder
@@ -74,6 +87,6 @@ private extension LaunchView {
 }
 
 #Preview {
-    LaunchView()
+    OnboardingView()
         .modelContainer(for: Item.self, inMemory: true)
 }
