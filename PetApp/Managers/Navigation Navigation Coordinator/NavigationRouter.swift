@@ -6,5 +6,6 @@
 //
 
 enum NavigationRouter {
+    case name
     case home
 }

@@ -18,6 +18,8 @@ struct ContentView: View {
                     switch scenes {
                     case .home:
                         HomeView()
+                    case .name:
+                        NameView()
                     }
                 }
         }

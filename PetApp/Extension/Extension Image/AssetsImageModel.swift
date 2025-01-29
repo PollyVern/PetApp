@@ -7,4 +7,5 @@
 
 public enum AssetsImageModel: String {
     case png_catGrayHead
+    case png_catBrownHead
 }
