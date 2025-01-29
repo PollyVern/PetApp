@@ -18,12 +18,26 @@ struct NameView: View {
     // Navigation
     @EnvironmentObject var coordinator: NavigationCoordinator
 
+    // Managers
+    @StateObject private var keyboardManager: KeyboardManager = KeyboardManager()
+
+
     var body: some View {
-        ZStack {
-            backgroundColor()
-            titleText()
-            catImage()
-            fieldView()
+        GeometryReader { geometry in
+            ZStack {
+                backgroundColor()
+                titleText()
+                catImage()
+                fieldView()
+            }
+            .ignoresSafeArea(.keyboard, edges: .bottom)
+            .onTapGesture(perform: {
+                self.endTextEditing()
+            })
+            .onAppear {
+                keyboardManager.addKeyboardObservers()
+            }
+            .navigationBarHidden(true)
         }
     }
 }
@@ -62,7 +76,12 @@ private extension NameView {
     }
 
     func fieldView() -> some View {
-        FloatingTextField(text: $name, model: FloatingTextFieldModel(floatingText: "name_view_floating_title"))
+        VStack {
+            Spacer()
+            FloatingTextField(text: $name, model: FloatingTextFieldModel(floatingText: "name_view_floating_title"))
+                .padding(.bottom, keyboardManager.keyboardHeight)
+                .animation(.easeInOut(duration: 0.3), value: keyboardManager.keyboardHeight)
+        }
     }
 }
 

@@ -46,7 +46,7 @@ private extension FloatingTextField {
     func background() -> some View {
         RoundedRectangle(cornerRadius: 20)
             .fill(.white)
-            .frame(height: 60)
+            .frame(height: 50)
     }
     
     
@@ -61,7 +61,7 @@ private extension FloatingTextField {
                 Text(NSLocalizedString("\(model.floatingText)", comment: ""))
                     .foregroundColor(.blue_darkColor)
                     .padding([.leading, .trailing], 20)
-                    .frame(width: 300, height: isFirstResponder || !text.isEmpty ? 18 : 40, alignment: .leading)
+                    .frame(width: 300, height: isFirstResponder || !text.isEmpty ? 12 : 30, alignment: .leading)
                     .font(isFirstResponder || !text.isEmpty ? .subheadline : .title3)
             }
             .onChange(of: isFocusState) { _, _ in
@@ -80,6 +80,8 @@ private extension FloatingTextField {
                 .accentColor(.blue_darkColor)
                 .font(.subheadline)
                 .multilineTextAlignment(.leading)
+                .foregroundColor(.blue_darkColor)
+
         }
         .padding([.leading, .trailing], 20)
         

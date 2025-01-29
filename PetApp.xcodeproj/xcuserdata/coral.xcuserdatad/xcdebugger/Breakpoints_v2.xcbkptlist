@@ -3,22 +3,4 @@
    uuid = "605A29F1-9523-4A7F-85FB-A93F69C40F2D"
    type = "1"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F9F3FE3B-B518-4B5A-BF22-76251833FB03"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PetApp/Common View/Scenes/Onboarding View/View/OnboardingView.swift"
-            startingColumnNumber = "13"
-            endingColumnNumber = "28"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

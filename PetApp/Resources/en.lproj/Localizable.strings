@@ -8,6 +8,6 @@
 
 "launch_view_header" = "Test Application Built With";
 "launch_view_swift_ui" = "SwiftUI";
-"launch_view_accent_button" = "Choose pet";
+"launch_view_accent_button" = "Next step";
 "name_view_title" = "Write Your Data";
 "name_view_floating_title" = "Name";

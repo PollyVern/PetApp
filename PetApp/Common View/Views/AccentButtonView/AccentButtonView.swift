@@ -28,7 +28,7 @@ struct AccentButtonView: View {
             .frame(height: 50)
             .frame(maxWidth: .infinity)
             .background(backgroundView())
-            .cornerRadius(10)
+            .cornerRadius(20)
         }
         .padding(EdgeInsets(top: 0, leading: 20, bottom: ConstantsUI.bottomPadding, trailing: 20))
     }
